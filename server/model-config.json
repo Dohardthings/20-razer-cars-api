@@ -37,15 +37,11 @@
     "dataSource": "db",
     "public": true
   },
-  "recipe": {
+  "car-type": {
     "dataSource": "db",
     "public": true
   },
-  "ingredient": {
-    "dataSource": "db",
-    "public": true
-  },
-  "step": {
+  "inventory-history": {
     "dataSource": "db",
     "public": true
   }

@@ -1,28 +1,29 @@
 {
-  "name": "ingredient",
+  "name": "car-type",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "amount": {
-      "type": "number",
-      "required": true
+    "year": {
+      "type": "number"
     },
-    "description": {
-      "type": "string",
-      "required": true
-    },
-    "unit-of-measure": {
+    "manufacturer": {
       "type": "string"
+    },
+    "modelName": {
+      "type": "string"
+    },
+    "totalInventory": {
+      "type": "number"
     }
   },
   "validations": [],
   "relations": {
-    "recipe": {
-      "type": "belongsTo",
-      "model": "recipe",
+    "inventory-histories": {
+      "type": "hasMany",
+      "model": "inventory-history",
       "foreignKey": ""
     }
   },
