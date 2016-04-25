@@ -7,7 +7,7 @@
   },
   "properties": {
     "year": {
-      "type": "number"
+      "type": "string"
     },
     "manufacturer": {
       "type": "string"
@@ -21,7 +21,7 @@
   },
   "validations": [],
   "relations": {
-    "inventory-histories": {
+    "history": {
       "type": "hasMany",
       "model": "inventory-history",
       "foreignKey": ""

@@ -14,7 +14,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "car": {
+      "type": "belongsTo",
+      "model": "car-type",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
