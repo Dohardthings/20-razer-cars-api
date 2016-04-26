@@ -1,26 +1,24 @@
 {
-  "name": "step",
+  "name": "inventory-history",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "description": {
-      "type": "string",
-      "required": true
+    "checkOut": {
+      "type": "date"
     },
-    "order": {
-      "type": "number",
-      "required": true
+    "checkIn": {
+      "type": "date"
     }
   },
   "validations": [],
   "relations": {
-    "recipe": {
+    "car": {
       "type": "belongsTo",
-      "model": "recipe",
-      "foreignKey": ""
+      "model": "car-type",
+      "foreignKey": "car-id"
     }
   },
   "acls": [],
